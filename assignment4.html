@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Board of Control for Cricket</title>
+</head>
+<body>
+<h1>Board of Control for Cricket in India</h1>
+<h3 style="margin-left:40px">Indian team T20 cricket match Stats</h3>
+<canvas id="myCanvas" width="1000" height="500" style="border:1px solid black;">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "15px Arial";
+ctx.lineWidth = 1.5;
+ctx.strokeText("Runs",0,30);
+
+ctx.strokeText("240  -",67,70);
+ctx.strokeText("200  -",67,120);
+ctx.strokeText("160  -",67,170);
+ctx.strokeText("120  -",67,220);
+ctx.strokeText("80  -",67,270);
+ctx.strokeText("40  -",67,320);
+ctx.strokeText("0      -",67,374);
+ctx.moveTo(100,400);
+ctx.lineTo(100,0);
+ctx.moveTo(78,370);
+ctx.lineTo(700,370);
+ctx.strokeText("|",170,380);
+ctx.strokeText("5",160,395);
+ctx.strokeText("|",270,380);
+ctx.strokeText("10",260,395);
+ctx.strokeText("|",370,380);
+ctx.strokeText("15",360,395);
+ctx.strokeText("|",470,380);
+ctx.strokeText("20",460,395);
+ctx.strokeText("|",570,380);
+ctx.strokeText("25",560,395);
+ctx.strokeText("|",670,380);
+ctx.strokeText("30",660,395);
+
+ctx.strokeText("Overs",450,440);
+ctx.moveTo(170,320); //(5, 40)
+ctx.lineTo(270,272);
+ctx.moveTo(270,272); //(10, 75)
+ctx.lineTo(370,195);
+ctx.moveTo(370,195); //(15, 140)
+ctx.lineTo(470,107);//(20, 210)
+
+
+
+ctx.stroke();
+</script>
+</body>
+</html>
